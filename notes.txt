@@ -1,0 +1,7 @@
+React query fetches data from the server, then it stores in a key value fashion where the key is the name string that we provide and it should be unique for all queries.
+
+Now as soon as it fetches data it stores that in cache, so when we revisit the UI the data is rendered from the cache to invalidate the freshness of the data it is fetched from the server in background. and the UI changes accordingly if the fetched fresh data is not equal to cache data
+
+When the data is invalidated in the background the  isLoading flag does not change rather the isFethcing flag changes and fetches data in the background and updates as soon as the new data comes from the server and the cache is updated with the new data
+
+Default cache time is 5min 
