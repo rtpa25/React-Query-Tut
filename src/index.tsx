@@ -1,12 +1,12 @@
 /** @format */
 
-import ReactDom from 'react-dom';
+import { render } from 'react-dom';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import App from './App';
 
 const queryClient = new QueryClient();
 
-ReactDom.render(
+render(
   <QueryClientProvider client={queryClient}>
     <App />
   </QueryClientProvider>,

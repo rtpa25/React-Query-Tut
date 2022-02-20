@@ -34,5 +34,55 @@
       "id": 3,
       "name": "Yash"
     }
+  ],
+  "users": [
+    {
+      "id": "rp@sp.io",
+      "channelId": "rp"
+    }
+  ],
+  "channels": [
+    {
+      "id": "rp",
+      "courses": ["React", "Golang", "Docker"]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "Red"
+    },
+    {
+      "id": 2,
+      "label": "Green"
+    },
+    {
+      "id": 3,
+      "label": "Blue"
+    },
+    {
+      "id": 4,
+      "label": "Yellow"
+    },
+    {
+      "id": 5,
+      "label": "Pink"
+    },
+    {
+      "id": 6,
+      "label": "Black"
+    },
+    {
+      "id": 7,
+      "label": "Cyan"
+    },
+    {
+      "id": 8,
+      "label": "White"
+    },
+    {
+      "id": 9,
+      "label": "Purple"
+    }
   ]
 }

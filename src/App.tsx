@@ -5,8 +5,12 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import {
+  DependentQueries,
+  DynamicParralellQueries,
   HomePage,
   HWSuperHeroesPage,
+  InfiniteQueriesPage,
+  PaginatedQueries,
   ParralellQueries,
   RQSuperHeroePage,
   RQSuperHeroesPage,
@@ -34,6 +38,20 @@ const App: FC = () => {
             <li>
               <Link to='/parrallel-query'>Parallel Query Page</Link>
             </li>
+            <li>
+              <Link to='/dynamic-parrallel-query'>
+                Dynamic Parallel Query Page
+              </Link>
+            </li>
+            <li>
+              <Link to='/dependent-query'>Dependent Query</Link>
+            </li>
+            <li>
+              <Link to='/paginated-query'>Paginated Query</Link>
+            </li>
+            <li>
+              <Link to='/infinite-query'>Infinite Query</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -46,6 +64,16 @@ const App: FC = () => {
             element={<RQSuperHeroePage />}
           />
           <Route path='/parrallel-query' element={<ParralellQueries />} />
+          <Route
+            path='/dynamic-parrallel-query'
+            element={<DynamicParralellQueries heroIds={[1, 3]} />}
+          />
+          <Route
+            path='/dependent-query'
+            element={<DependentQueries email='rp@sp.io' />}
+          />
+          <Route path='/paginated-query' element={<PaginatedQueries />} />
+          <Route path='/infinite-query' element={<InfiniteQueriesPage />} />
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} position={'bottom-right'} />
