@@ -19,6 +19,36 @@
       "id": 4,
       "name": "Iron Man",
       "alterEgo": "Robert"
+    },
+    {
+      "name": "Flash",
+      "alterEgo": "Barry Allen",
+      "id": 77.9319916819467
+    },
+    {
+      "name": "SpiderMan",
+      "alterEgo": "Tom",
+      "id": 18.3237979756358
+    },
+    {
+      "name": "Black Widow",
+      "alterEgo": "Scarlet",
+      "id": 55.92366542550508
+    },
+    {
+      "name": "RP",
+      "alterEgo": "sdf",
+      "id": 24.18931032080995
+    },
+    {
+      "name": "sdf",
+      "alterEgo": "sdfsd",
+      "id": 82.24520982777658
+    },
+    {
+      "name": "ronsdf",
+      "alterEgo": "asdffsf",
+      "id": 13.138351054897218
     }
   ],
   "friends": [
@@ -44,7 +74,11 @@
   "channels": [
     {
       "id": "rp",
-      "courses": ["React", "Golang", "Docker"]
+      "courses": [
+        "React",
+        "Golang",
+        "Docker"
+      ]
     }
   ],
   "colors": [
